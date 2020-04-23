@@ -82,7 +82,7 @@
         text-align: center;
     }
 
-   .post #myBtn{
+   #pictureupload{
         float: right;
         padding: 15px;
         z-index: 1;
@@ -96,7 +96,7 @@
 
     }
 
-    .post #myBtn{
+    #pictureupload{
         display: none;
     }
 
@@ -515,7 +515,7 @@
         display: none;
     }
 
-    .post #mmyBtn{
+    #pictureupload{
         display: none;
     }
 }
@@ -736,7 +736,7 @@ select:focus {
     cursor: pointer;
 }
 .modal h2{
-    color: darkblue;
+    color: #4267b2;
 }
 .modal .uploadinput{
     margin-top: 30px;
@@ -747,10 +747,17 @@ select:focus {
 input[type="submit"]{
     padding: 10px 15px;
     color: white;
-    background-color: darkblue;
-    border: 1px solid darkblue;
+    background-color: #4267b2;
+    border: 1px solid #4267b2;
     border-radius: 5px;
 }
 .modal input[type="file"]{
     color: white;
+}
+.postupload{
+    text-align: center;
+    margin-top: 15px;
+    padding: 10px 20px;
+    color: white;
+    background-color: #4267b2;
 }
