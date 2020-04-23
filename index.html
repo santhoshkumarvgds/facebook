@@ -5,6 +5,8 @@
     <title>Facebook</title>
     <!-- external links -->
     <link rel="icon" href="images/FacebookLogo.png" type="image/png" />
+    <!-- jQury link-->
+    <script src="js/jquery.js"></script>
     <!-- meta tags -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- external style sheet-->
@@ -94,20 +96,20 @@
                     <p><b>Create post</b></p>
                 </div>
                 <hr>
-                <div class="textarea"><img src="images/Profile.jpg">
+                <div class="textarea"><img src="images/Profile.jpg" alt="profile">
                     <input type="text" placeholder="What's on your mind,name?">
                     <i class="far fa-images" id="pictureupload"></i>
                 </div>
                 <hr>
                 <div class="postlist" id="hidden">
                     <li>
-                        <p>Photo/Video</p>
+                        <p title="Upload photo/video" id="myBtn">Photo/Video</p>
                     </li>
                     <li>
-                        <p>Tag Friends</p>
+                        <p title="Tag your friends">Tag Friends</p>
                     </li>
                     <li>
-                        <p>Play games</p>
+                        <p title="Play games">Play games</p>
                     </li>
                     <li>
                         <p>...</p>
@@ -119,18 +121,18 @@
                     <p><b>Stories</b></p><a href="#">see all</a>
                 </div>
                 <div class="storieslist">
-                    <li><img src="images/Profile.jpg"> </li>
-                    <li id="lowscreen"><img src="images/Profile.jpg"> </li>
-                    <li id="hidden"><img src="images/Profile.jpg"> </li>
+                    <li><img src="images/Profile.jpg" alt="profile"> </li>
+                    <li id="lowscreen"><img src="images/Profile.jpg" alt="profile"> </li>
+                    <li id="hidden"><img src="images/Profile.jpg" alt="profile"> </li>
 
                 </div>
             </div>
-            <div class="postnews">
+            <div class="postnews" id="postnews">
                 <li>
-                    <div class="line"><img id="pro" src="images/Profile.jpg">
+                    <div class="line"><img id="pro" src="images/Profile.jpg" alt="profile">
                         <p>Name<br><span>Just now</span></p><a class="right">...</a>
                     </div>
-                    <img id="news" src="images/nature.jpg">
+                    <img id="news" src="images/nature.jpg" alt="nature">
                     <div class="line1"><i class="far fa-thumbs-up"></i>
                         <p>5K</p>
                         <a class="right">2 comments</a>
@@ -165,7 +167,7 @@
                         <p>Name<br><span>Just now</span></p><a class="right">...</a>
                     </div>
 
-                    <img id="news" src="images/cup.jpg">
+                    <img id="news" src="images/cup.jpg" alt="cup">
                     <div class="line1"><i class="far fa-thumbs-up"></i>
                         <p>5K</p>
                         <a class="right">2 comments</a>
@@ -196,11 +198,11 @@
 
                 </li>
                 <li>
-                    <div class="line"><img id="pro" src="images/Profile.jpg">
+                    <div class="line"><img id="pro" src="images/Profile.jpg" alt="profile">
                         <p>Name<br><span>Just now</span></p><a class="right">...</a>
                     </div>
 
-                    <img id="news" src="images/banana.jpg">
+                    <img id="news" src="images/banana.jpg" alt="banana">
                     <div class="line1"><i class="far fa-thumbs-up"></i>
                         <p>5K</p>
                         <a class="right">2 comments</a>
@@ -214,11 +216,11 @@
 
                 </li>
                 <li>
-                    <div class="line"><img id="pro" src="images/Profile.jpg">
+                    <div class="line"><img id="pro" src="images/Profile.jpg" alt="profile">
                         <p>Name<br><span>Just now</span></p><a class="right">...</a>
                     </div>
 
-                    <img id="news" src="images/food-snack.jpg">
+                    <img id="news" src="images/food-snack.jpg" alt="snacks">
                     <div class="line1"><i class="far fa-thumbs-up"></i>
                         <p>5K</p>
                         <a class="right">2 comments</a>
@@ -232,11 +234,11 @@
 
                 </li>
                 <li>
-                    <div class="line"><img id="pro" src="images/Profile.jpg">
+                    <div class="line"><img id="pro" src="images/Profile.jpg" alt="profile">
                         <p>Name<br><span>Just now</span></p><a class="right">...</a>
                     </div>
 
-                    <img id="news" src="images/woman-holding-a-moon.jpg">
+                    <img id="news" src="images/woman-holding-a-moon.jpg" alt="moon">
                     <div class="line1"><i class="far fa-thumbs-up"></i>
                         <p>5K</p>
                         <a class="right">2 comments</a>
@@ -250,11 +252,11 @@
 
                 </li>
                 <li>
-                    <div class="line"><img id="pro" src="images/Profile.jpg">
+                    <div class="line"><img id="pro" src="images/Profile.jpg" alt="profile">
                         <p>Name<br><span>Just now</span></p><a class="right">...</a>
                     </div>
 
-                    <img id="news" src="images/silhouette.jpg">
+                    <img id="news" src="images/silhouette.jpg" alt="silhouette">
                     <div class="line1"><i class="far fa-thumbs-up"></i>
                         <p>5K</p>
                         <a class="right">2 comments</a>
@@ -281,7 +283,7 @@
                 </div>
                 <hr>
                 <div class="profile">
-                    <li><img src="images/Profile.jpg">
+                    <li><img src="images/Profile.jpg" alt="profile">
                         <p><b>Name</b></p>
                         <hr>
                     </li>
@@ -325,9 +327,9 @@
         </li>
         <li id="imgicon">
             <i class="fas fa-chevron-left" id="left"></i>
-            <img src="images/game1.png">
-            <img src="images/game2.png">
-            <img src="images/game3.png">
+            <img src="images/game1.png" alt="game1">
+            <img src="images/game2.png" alt="game2">
+            <img src="images/game3.png" alt="game3">
             <i class="fas fa-chevron-right" id="right"></i>
             <hr>
         </li>
@@ -336,31 +338,31 @@
         </li>
         <li id="imgicon">
             <i class="fas fa-chevron-left" id="left"></i>
-            <img src="images/Profile.jpg">
-            <img src="images/Profile.jpg">
-            <img src="images/Profile.jpg">
+            <img src="images/Profile.jpg" alt="profile">
+            <img src="images/Profile.jpg" alt="profile">
+            <img src="images/Profile.jpg" alt="profile">
             <i class="fas fa-chevron-right" id="right"></i>
             <hr>
         </li>
         <li>
             <p><b>YOUR PAGES</b></p>
         </li>
-        <li><img src="images/Profile.jpg">
+        <li><img src="images/Profile.jpg" alt="profile">
             <h4>name</h4>
         </li>
         <li class="opacity">
             <p><b>CONTACTS</b></p>
         </li>
         <li class="opacity">
-            <img src="images/Profile.jpg">
+            <img src="images/Profile.jpg" alt="profile">
             <h4>name</h4><br>
-            <img src="images/Profile.jpg">
+            <img src="images/Profile.jpg" alt="profile">
             <h4>name</h4><br>
-            <img src="images/Profile.jpg">
+            <img src="images/Profile.jpg" alt="profile">
             <h4>name</h4><br>
-            <img src="images/Profile.jpg">
+            <img src="images/Profile.jpg" alt="profile">
             <h4>name</h4><br>
-            <img src="images/Profile.jpg">
+            <img src="images/Profile.jpg" alt="profile">
             <h4>name</h4>
         </li>
         <li class="opacity" id="bottom">
@@ -371,7 +373,28 @@
             <i class="fas fa-user-friends"></i>
         </li>
     </div>
+    <!---,odalbox / upload -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Facebook post upload</h2>
+            <div class="uploadinput">
+                <input type="radio" name="uploadfile" id="img" checked> Image
+                <input type="radio" name="uploadfile" > Video
+                <br><br>
+              
+                <label>Enter a post name </label>
+            <input type="text" id="postname" required><br><br>
+                <label>Choose an image</label>
+            <input type="file" id="file" required><br><br>
+            <input type="submit" onclick="sa()">
+            </div>
+        </div>
+    </div>
 
+
+    <!-- script start -->
+    <script src="js/script.js" type="text/javascript"></script>
 </body>
 
 </html>
