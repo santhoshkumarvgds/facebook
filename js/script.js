@@ -33,7 +33,6 @@ $("#file").change(function () {
         $("#news").first().attr('src', e.target.result);
     }
     reader.readAsDataURL(this.files[0]);
-    document.getElementById("file").value = '';
 });
 
 function sa() {
