@@ -20,7 +20,6 @@ $("#postname").click(function () {
 });
 
 $("#file").change(function () {
-    document.getElementById("file").value = '';
     $name = $("#postname").val();
     if (document.getElementById('img').checked) {
         $var = $("<li><div class='line'><img id='pro' src='images/Profile.jpg' alt='profile'><p>Name > " + $name + "<br><span>Just now</span></p><a class='right'>...</a></div><img id='news' alt=' please check your option and file type'><div class='line1'><i class='far fa-thumbs-up'></i> <p> 0K</p><a class='right'> 0 comments</a><hr><div class='feeds'><a><i class='far fa-thumbs-up'></i> Like</a><a><i class='far fa-comment'></i> Comments</a><a><i class='fas fa-share'></i> Share</a> </div></div></li>");
@@ -34,6 +33,7 @@ $("#file").change(function () {
         $("#news").first().attr('src', e.target.result);
     }
     reader.readAsDataURL(this.files[0]);
+    document.getElementById("file").value = '';
 });
 
 function sa() {
