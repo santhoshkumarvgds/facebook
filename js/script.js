@@ -4,6 +4,7 @@ var span = document.getElementsByClassName("close")[0];
 btn.onclick = function () {
     modal.style.display = "block";
     document.getElementById("postname").value = " ";
+    document.getElementById("file").value = '';
     $("#file").attr('disabled', 'disabled');
 }
 span.onclick = function () {
