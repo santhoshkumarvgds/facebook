@@ -751,6 +751,9 @@ input[type="submit"]{
     border: 1px solid #4267b2;
     border-radius: 5px;
 }
+input[type="file"]{
+    color: white;
+}
 .postupload{
     text-align: center;
     margin-top: 15px;
