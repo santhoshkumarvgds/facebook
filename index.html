@@ -390,14 +390,13 @@
             <span class="close">&times;</span>
             <h2>Facebook post upload</h2>
             <div class="uploadinput">
-                <input type="radio" name="uploadfile" id="img" checked> Image
-                <input type="radio" name="uploadfile" > Video
+               <p id="important">*Note : only support image and video files</p>
                 <br><br>
               
                 <label>Enter a post name </label>
             <input type="text" id="postname" required><br><br>
                 <label>Choose an image</label>
-            <input type="file" id="file" required><br><br>
+            <input type="file" id="file" accept="image/*,video/*"  required><br><br>
             <input type="submit" onclick="sa()">
             </div>
         </div>
