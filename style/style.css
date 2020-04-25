@@ -751,8 +751,11 @@ input[type="submit"]{
     border: 1px solid #4267b2;
     border-radius: 5px;
 }
-input[type="file"]{
+.modal input[type="file"]{
     color: white;
+}
+#important{
+    color: red;
 }
 .postupload{
     text-align: center;
