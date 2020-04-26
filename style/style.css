@@ -82,7 +82,7 @@
         text-align: center;
     }
 
-   #pictureupload{
+    #pictureupload {
         float: right;
         padding: 15px;
         z-index: 1;
@@ -96,7 +96,7 @@
 
     }
 
-    #pictureupload{
+    #pictureupload {
         display: none;
     }
 
@@ -515,7 +515,7 @@
         display: none;
     }
 
-    #pictureupload{
+    #pictureupload {
         display: none;
     }
 }
@@ -698,7 +698,7 @@ select:focus {
 
 /* modal box */
 .modal {
-    
+
     display: none;
     position: fixed;
     z-index: 1;
@@ -713,7 +713,7 @@ select:focus {
 }
 
 .modal-content {
-    
+
     background-color: #fefefe;
     margin: auto;
     padding: 40px;
@@ -735,16 +735,20 @@ select:focus {
     text-decoration: none;
     cursor: pointer;
 }
-.modal h2{
+
+.modal h2 {
     color: #4267b2;
 }
-.modal .uploadinput{
+
+.modal .uploadinput {
     margin-top: 30px;
 }
-.modal input{
+
+.modal input {
     padding: 3px;
 }
-input[type="submit"]{
+
+input[type="submit"] {
     padding: 10px 15px;
     color: white;
     background-color: #4267b2;
@@ -752,10 +756,11 @@ input[type="submit"]{
     border-radius: 5px;
 }
 
-#important{
+#important {
     color: red;
 }
-.postupload{
+
+.postupload {
     text-align: center;
     margin-top: 15px;
     padding: 10px 20px;
