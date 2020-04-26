@@ -55,12 +55,15 @@ function sa() {
         var nametostr = submit[i];
         if (nametostr.includes("image")) {
             $var = $("<li><div class='line'><img id='pro' src='images/Profile.jpg' alt='profile'><p>Name > " + $name + "<br><span>Just now</span></p><a class='right'>...</a></div><img id='news' alt=' please check your option and file type'><div class='line1'><i class='far fa-thumbs-up'></i> <p> 0K</p><a class='right'> 0 comments</a><hr><div class='feeds'><a><i class='far fa-thumbs-up'></i> Like</a><a><i class='far fa-comment'></i> Comments</a><a><i class='fas fa-share'></i> Share</a> </div></div></li>");
+            $('.section2 .postnews').prepend($var);
+            $("#news").first().attr('src', submit[i]);
         } else if (nametostr.includes("video")) {
             $var = $("<li><div class='line'><img id='pro' src='images/Profile.jpg' alt='profile'><p>Name > " + $name + "<br><span>Just now</span></p><a class='right'>...</a></div><video id='news' alt=' please check your option and file type' controls></video><div class='line1'><i class='far fa-thumbs-up'></i> <p> 0K</p><a class='right'> 0 comments</a><hr><div class='feeds'><a><i class='far fa-thumbs-up'></i> Like</a><a><i class='far fa-comment'></i> Comments</a><a><i class='fas fa-share'></i> Share</a> </div></div></li>");
+            $('.section2 .postnews').prepend($var);
+            $("#news").first().attr('src', submit[i]);
         }
 
-        $('.section2 .postnews').prepend($var);
-        $("#news").first().attr('src', submit[i]);
+
         i--;
 
     }
