@@ -13,7 +13,7 @@ document.body.onload = function () {
                 if (userdataimg[counterimg].includes("image")) {
                     isimage(userdataname, userdataimg[counterimg]);
                 } else if (userdataimg[counterimg].includes("video")) {
-                    isimage(userdataname, userdataimg[counterimg]);
+                    isvideo(userdataname, userdataimg[counterimg]);
                 }
             }
         }
