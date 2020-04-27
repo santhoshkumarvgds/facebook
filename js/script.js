@@ -1,14 +1,13 @@
 document.body.onload = function () {
     if (localStorage.length > 0) {
-        var userdataimg = JSON.parse(localStorage.getItem("useradditem"));
-        // alert(userdataimg);
-        var userdata = JSON.parse(localStorage.getItem("useraddname"));
-        var userdataname = "";
-        for (a = 0; a < userdata.length; a++) {
-            userdataname += userdata[a];
-        }
-        for (var countername = 0; countername <
-            1; countername++) {
+        for (var countval = 1; countval <= localStorage.count; countval++) {
+            var userdataimg = JSON.parse(localStorage.getItem("useradditem" + countval));
+            var userdata = JSON.parse(localStorage.getItem("useraddname" + countval));
+            var userdataname = "";
+            for (var a = 0; a < userdata.length; a++) {
+                userdataname += userdata[a];
+            }
+
             for (var counterimg = userdataimg.length - 1; counterimg >= 0; counterimg--) {
                 if (userdataimg[counterimg].includes("image")) {
                     isimage(userdataname, userdataimg[counterimg]);
@@ -16,6 +15,7 @@ document.body.onload = function () {
                     isvideo(userdataname, userdataimg[counterimg]);
                 }
             }
+
         }
     }
 }
@@ -71,9 +71,14 @@ function sa() {
         i--;
     }
     modal.style.display = "none";
-    if (submit.length) {
-        localStorage.setItem("useraddname", JSON.stringify($name));
-        localStorage.setItem("useradditem", JSON.stringify(submit));
+    if (submit.length > 0) {
+        if (localStorage.count > 0) {
+            localStorage.count = Number(localStorage.count) + 1;
+        } else {
+            localStorage.count = 1;
+        }
+        localStorage.setItem("useraddname" + localStorage.count, JSON.stringify($name));
+        localStorage.setItem("useradditem" + localStorage.count, JSON.stringify(submit));
     }
 }
 
